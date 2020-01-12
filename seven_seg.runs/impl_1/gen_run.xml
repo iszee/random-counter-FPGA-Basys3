@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1543339845">
+  <File Type="PWROPT-DCP" Name="seven_seg_counter_pwropt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PLACE-DCP" Name="seven_seg_counter_placed.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DRC" Name="seven_seg_counter_drc_pwropted.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="seven_seg_counter_timing_summary_routed.rpt"/>
+  <File Type="PA-TCL" Name="seven_seg_counter.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DCP" Name="seven_seg_counter_opt.dcp"/>
+  <File Type="OPT-DRC" Name="seven_seg_counter_drc_opted.rpt"/>
+  <File Type="PLACE-IO" Name="seven_seg_counter_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="seven_seg_counter_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="seven_seg_counter_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="seven_seg_counter_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="seven_seg_counter_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="seven_seg_counter_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="seven_seg_counter_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="seven_seg_counter_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="seven_seg_counter_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="seven_seg_counter_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="seven_seg_counter_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="seven_seg_counter_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="seven_seg_counter_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="seven_seg_counter_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="seven_seg_counter_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="seven_seg_counter_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="seven_seg_counter_route_status.pb"/>
+  <File Type="ROUTE-TIMING-PB" Name="seven_seg_counter_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="seven_seg_counter_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="seven_seg_counter_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="seven_seg_counter_postroute_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="seven_seg_counter.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="seven_seg_counter_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="seven_seg_counter_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="seven_seg_counter_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="seven_seg_counter.bit"/>
+  <File Type="BG-BIN" Name="seven_seg_counter.bin"/>
+  <File Type="BITSTR-MSK" Name="seven_seg_counter.msk"/>
+  <File Type="BITSTR-RBT" Name="seven_seg_counter.rbt"/>
+  <File Type="BITSTR-NKY" Name="seven_seg_counter.nky"/>
+  <File Type="BITSTR-BMM" Name="seven_seg_counter_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="seven_seg_counter.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="seven_seg_counter.sysdef"/>
+  <File Type="BG-BGN" Name="seven_seg_counter.bgn"/>
+  <File Type="BG-DRC" Name="seven_seg_counter.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/seven_seg_counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/numto7.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="seven_seg_counter"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/projects/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1543303497"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/projects/Basys3_Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

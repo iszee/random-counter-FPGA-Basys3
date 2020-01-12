@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Nov 27 23:00:48 2018
+# Process ID: 6148
+# Log file: D:/fpga/xilinix/projects/seven_seg/seven_seg.runs/synth_1/seven_seg_counter.vds
+# Journal file: D:/fpga/xilinix/projects/seven_seg/seven_seg.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source seven_seg_counter.tcl
